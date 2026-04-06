@@ -25,7 +25,7 @@ module.exports = {
       },
       animation: {
         // Durasi 30 detik untuk satu putaran penuh
-        "infinite-scroll": "infinite-scroll 40s linear infinite",
+        "infinite-scroll": "infinite-scroll 30s linear infinite",
       },
       keyframes: {
         "infinite-scroll": {
