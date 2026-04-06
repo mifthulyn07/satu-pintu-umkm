@@ -33,8 +33,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <style>
+      html,
       body {
-        overflow-x: hidden; /* Mencegah scroll horizontal saat animasi */
+        max-width: 100%;
+        overflow-x: hidden;
+        position: relative;
       }
 
       /* gsap start*/
@@ -197,7 +200,7 @@
     <!-- Hero -->
     <section
       id="home"
-      class="pt-36 pb-16 dark:bg-dark relative min-h-[90vh] flex items-center justify-center bg-white overflow-hidden"
+      class="pt-36 pb-16 dark:bg-dark w-full relative min-h-[90vh] flex items-center justify-center bg-white overflow-hidden"
     >
       <!-- effect blur on hero -->
       <div
@@ -274,7 +277,8 @@
                 src="https://lottie.host/6db59a9b-2a08-470c-81e7-3ee0fb61eb7e/9wwP8PqgQ3.json"
                 background="transparent"
                 speed="1"
-                style="width: 500px; height: 500px"
+                class="w-full max-w-[500px] md:max-w-[500px] h-auto"
+                style="height: auto"
                 loop
                 autoplay
               >
