@@ -9,7 +9,13 @@
     <link href="./dist/output.css" rel="stylesheet" />
     <link rel="icon" href="dist/img/blob.jpg" />
 
-    <!-- tailwind -->
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind dark fitur -->
     <script>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
       if (
@@ -26,11 +32,33 @@
     <!-- AOS (Animate on Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- GSAP -->
     <style>
-      /* CSS Khusus untuk menyembunyikan teks sebelum animasi GSAP dimuat */
+      body {
+        overflow-x: hidden; /* Mencegah scroll horizontal saat animasi */
+      }
+
+      /* gsap start*/
       .gsap-reveal {
         visibility: hidden;
+      }
+
+      /* logo animation */
+      /* Masking untuk efek halus di sisi kiri dan kanan */
+      .mask-gradient {
+        mask-image: linear-gradient(
+          to right,
+          transparent,
+          black 15%,
+          black 65%,
+          transparent
+        );
+        -webkit-mask-image: linear-gradient(
+          to right,
+          transparent,
+          black 15%,
+          black 65%,
+          transparent
+        );
       }
     </style>
   </head>
@@ -49,13 +77,15 @@
               <div class="w-2 h-full bg-white rounded-full"></div>
               <div class="w-2 h-full bg-accent rounded-full"></div>
             </div>
-            <a href="#home" class="text-primary font-bold text-lg block"
+            <a
+              href="#home"
+              class="text-primary font-display font-bold text-lg block"
               >Satu Pintu UMKM.</a
             >
           </div>
 
           <!-- nav -->
-          <div class="flex items-center px-4">
+          <div class="flex items-center px-4 font-interface">
             <button
               id="hamburger"
               name="hamburger"
@@ -81,7 +111,7 @@
                 <li class="group">
                   <a
                     href="#home"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-slate-100"
                     >Home</a
                   >
                 </li>
@@ -90,7 +120,7 @@
                 <li class="group">
                   <a
                     href="#about"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-slate-100"
                     >About</a
                   >
                 </li>
@@ -99,7 +129,7 @@
                 <li class="group">
                   <a
                     href="#skill"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-slate-100"
                     >Skill</a
                   >
                 </li>
@@ -108,7 +138,7 @@
                 <li class="group">
                   <a
                     href="#portofolio"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-slate-100"
                     >Portofolio</a
                   >
                 </li>
@@ -117,7 +147,7 @@
                 <li class="group">
                   <a
                     href="#blog"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-slate-100"
                     >Blog</a
                   >
                 </li>
@@ -126,7 +156,7 @@
                 <!-- <li class="group">
                   <a
                     href="#clients"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-slate-100"
                     >Clients</a
                   >
                 </li> -->
@@ -135,7 +165,7 @@
                 <li class="group">
                   <a
                     href="#contact"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-slate-100"
                     >Contact</a
                   >
                 </li>
@@ -167,14 +197,14 @@
     <!-- Hero -->
     <section
       id="home"
-      class="pt-36 dark:bg-dark relative min-h-[90vh] flex items-center justify-center bg-white overflow-hidden"
+      class="pt-36 pb-16 dark:bg-dark relative min-h-[90vh] flex items-center justify-center bg-white overflow-hidden"
     >
       <!-- effect blur on hero -->
       <div
-        class="absolute -top-45 -right-40 w-96 h-96 bg-primary rounded-full opacity-5 blur-3xl"
+        class="absolute -top-45 -right-40 w-96 h-96 bg-primary rounded-full opacity-10 dark:opacity-20 blur-[120px]"
       ></div>
       <div
-        class="absolute bottom-10 -left-20 w-80 h-80 bg-accent rounded-full opacity-10 blur-3xl"
+        class="absolute bottom-10 -left-20 w-80 h-80 bg-accent rounded-full opacity-10 dark:opacity-20 blur-[120px]"
       ></div>
 
       <div class="container">
@@ -186,7 +216,7 @@
             >
               <span class="relative flex h-2 w-2">
                 <span
-                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-umkm-blue opacity-75"
+                  class="animate-ping animate-infinite animate-duration-[3000ms] absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
                 ></span>
                 <span
                   class="relative inline-flex rounded-full h-2 w-2 bg-primary"
@@ -198,13 +228,13 @@
             <!-- hero headline -->
             <h1
               id="hero-headline"
-              class="gsap-reveal text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gov-dark leading-[1.15] mb-8 tracking-tight"
+              class="gsap-reveal font-display dark:text-slate-100 text-dark text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.15] mb-8 tracking-tight"
             >
               Satu Pintu Informasi, <br />
               <span class="text-primary relative"
                 >Ribuan Peluang
                 <span
-                  class="absolute bottom-1 left-0 w-full h-1.5 bg-accent rounded-full"
+                  class="title-line gsap-reveal absolute bottom-1 left-0 w-0 h-1.5 bg-accent rounded-full"
                 ></span>
               </span>
               <br class="hidden lg:block" />
@@ -213,12 +243,12 @@
 
             <!-- hero sub headline -->
             <p
-              class="gsap-reveal hero-sub-headline text-base font-medium md:text-lg lg:text-xl dark:text-slate-400 text-secondary mb-10 leading-relaxed"
+              class="gsap-reveal hero-sub-headline font-interface text-base font-medium md:text-lg lg:text-xl dark:text-slate-400 text-secondary mb-10 leading-relaxed"
             >
               Akses cepat, terpadu, dan transparan untuk alur layanan,
               pendaftaran event pelatihan, bantuan pemerintah, hingga pengaduan
               masyarakat.
-              <span class="text-dark dark:text-white"
+              <span class="text-dark dark:text-slate-100"
                 >Semuanya dalam satu portal digital.</span
               >
             </p>
@@ -232,7 +262,9 @@
           </div>
 
           <!-- gsap reveal-visual -->
-          <div class="gsap-reveal-visual w-full self-center px-4 lg:w-1/2">
+          <div
+            class="gsap-reveal-visual w-full self-center px-4 lg:w-1/2 pb-16 sm:pb-0"
+          >
             <div class="flex justify-center mt-10 lg:mt-0">
               <script
                 src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
@@ -253,8 +285,84 @@
       </div>
     </section>
 
+    <!-- tape wrapper -->
+    <section class="py-3 bg-white border-y border-slate-100 overflow-hidden">
+      <div class="relative flex overflow-hidden mask-gradient">
+        <div
+          class="flex flex-none animate-infinite-scroll items-center gap-20 py-4 pr-20"
+        >
+          <img
+            src="dist/img/logo/logo-provinsisumut.png"
+            class="h-16 w-auto flex-none grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            alt="Logo"
+          />
+          <img
+            src="dist/img/logo/logo-banggamelayanibangsa.png"
+            class="h-12 w-auto flex-none grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            alt="Logo"
+          />
+          <img
+            src="dist/img/logo/logo-berakhlak.png"
+            class="h-12 w-auto flex-none grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            alt="Logo"
+          />
+          <img
+            src="dist/img/logo/logo-diskopukm.png"
+            class="h-12 w-auto flex-none grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            alt="Logo"
+          />
+          <img
+            src="dist/img/logo/logo-kementerianumkm.png"
+            class="h-12 w-auto flex-none grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            alt="Logo"
+          />
+          <img
+            src="dist/img/logo/logo-kolaborasisumutberkah.png"
+            class="h-10 w-auto flex-none grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            alt="Logo"
+          />
+        </div>
+
+        <div
+          class="flex flex-none animate-infinite-scroll items-center gap-20 py-4 pr-20"
+          aria-hidden="true"
+        >
+          <img
+            src="dist/img/logo/logo-provinsisumut.png"
+            class="h-16 w-auto flex-none grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            alt="Logo"
+          />
+          <img
+            src="dist/img/logo/logo-banggamelayanibangsa.png"
+            class="h-12 w-auto flex-none grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            alt="Logo"
+          />
+          <img
+            src="dist/img/logo/logo-berakhlak.png"
+            class="h-12 w-auto flex-none grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            alt="Logo"
+          />
+          <img
+            src="dist/img/logo/logo-diskopukm.png"
+            class="h-12 w-auto flex-none grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            alt="Logo"
+          />
+          <img
+            src="dist/img/logo/logo-kementerianumkm.png"
+            class="h-12 w-auto flex-none grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            alt="Logo"
+          />
+          <img
+            src="dist/img/logo/logo-kolaborasisumutberkah.png"
+            class="h-10 w-auto flex-none grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            alt="Logo"
+          />
+        </div>
+      </div>
+    </section>
+
     <!-- about -->
-    <section id="about" class="pt-36 pb-16 dark:bg-dark">
+    <section id="about" class="pt-36 pb-16 dark:bg-dark font-interface">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -264,7 +372,7 @@
               About
             </h4>
             <h2
-              class="font-bold text-dark dark:text-white text-3xl mb-5 max-w-md lg:text-4xl"
+              class="font-bold text-dark dark:text-slate-100 text-3xl mb-5 max-w-md lg:text-4xl"
             >
               Let me introduce myself
             </h2>
@@ -272,9 +380,11 @@
               class="font-medium text-base mb-5 md:text-lg lg:text-xl text-secondary dark:text-slate-400 max-w-full"
             >
               A fresh graduate in
-              <span class="text-dark dark:text-white">Information Systems</span>
+              <span class="text-dark dark:text-slate-100"
+                >Information Systems</span
+              >
               from
-              <span class="text-dark dark:text-white"
+              <span class="text-dark dark:text-slate-100"
                 >State Islamic University of North Sumatera</span
               >, I am passionate about leveraging technology to solve complex
               problems and improve efficiency. With a strong foundation in both
@@ -291,7 +401,7 @@
           </div>
           <div class="w-full px-4 lg:w-1/2">
             <h3
-              class="font-semibold text-dark dark:text-white text-2xl md:text-3xl lg:text-4xl lg:pt-10 mb-5"
+              class="font-semibold text-dark dark:text-slate-100 text-2xl md:text-3xl lg:text-4xl lg:pt-10 mb-5"
             >
               Get in Touch
             </h3>
@@ -451,7 +561,7 @@
               Skill
             </h4>
             <h2
-              class="font-bold text-dark dark:text-white text-3xl lg:text-4xl mb-4"
+              class="font-bold text-dark dark:text-slate-100 text-3xl lg:text-4xl mb-4"
             >
               Web Development Expertise
             </h2>
@@ -478,7 +588,7 @@
                 alt="Html"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >HTML5</span
               >
             </div>
@@ -494,7 +604,7 @@
                 alt="css"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >CSS3</span
               >
             </div>
@@ -510,7 +620,7 @@
                 alt="Bootstrap"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >Bootstrap</span
               >
             </div>
@@ -526,7 +636,7 @@
                 alt="Tailwind"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >Tailwind</span
               >
             </div>
@@ -542,7 +652,7 @@
                 alt="Javascript"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >Javascript</span
               >
             </div>
@@ -558,7 +668,7 @@
                 alt="Javascript"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >Vue.js</span
               >
             </div>
@@ -574,7 +684,7 @@
                 alt="Jquery"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >JQuery</span
               >
             </div>
@@ -590,7 +700,7 @@
                 alt="PHP"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >PHP</span
               >
             </div>
@@ -606,7 +716,7 @@
                 alt="Mysql"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >Mysql</span
               >
             </div>
@@ -622,7 +732,7 @@
                 alt="Java"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >Java</span
               >
             </div>
@@ -639,7 +749,7 @@
                 alt="Python"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >Python</span
               >
             </div>
@@ -655,7 +765,7 @@
                 alt="CPP"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >C++</span
               >
             </div>
@@ -671,7 +781,7 @@
                 alt="git"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >Git</span
               >
             </div>
@@ -687,7 +797,7 @@
                 alt="Github"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >Github</span
               >
             </div>
@@ -703,7 +813,7 @@
                 alt="Laravel"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >Laravel</span
               >
             </div>
@@ -719,7 +829,7 @@
                 alt="Postman"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >Postman</span
               >
             </div>
@@ -735,7 +845,7 @@
                 alt="Rest API documentation"
                 class="w-10 h-10 p-1 hover:text-white text-secondary"
               />
-              <span class="p-1 font-semibold text-dark dark:text-white"
+              <span class="p-1 font-semibold text-dark dark:text-slate-100"
                 >Restfull API</span
               >
             </div>
@@ -979,7 +1089,7 @@
               Blog
             </h4>
             <h2
-              class="font-bold text-dark dark:text-white text-3xl lg:text-4xl mb-4"
+              class="font-bold text-dark dark:text-slate-100 text-3xl lg:text-4xl mb-4"
             >
               Latest Posts
             </h2>
@@ -1010,7 +1120,7 @@
                 <h3>
                   <a
                     href="https://medium.com/@mifthulyn07/comparing-text-documents-using-tf-idf-and-cosine-similarity-in-python-311863c74b2c"
-                    class="block mb-3 font-semibold text-xl text-dark dark:text-white hover:text-primary truncate"
+                    class="block mb-3 font-semibold text-xl text-dark dark:text-slate-100 hover:text-primary truncate"
                   >
                     Comparing Text Documents Using TF-IDF and Cosine Similarity
                     in Python</a
@@ -1046,7 +1156,7 @@
               Contact
             </h4>
             <h2
-              class="font-bold text-dark text-3xl dark:text-white lg:text-4xl mb-4"
+              class="font-bold text-dark text-3xl dark:text-slate-100 lg:text-4xl mb-4"
             >
               I’m available for every opportunity!
             </h2>
@@ -1329,20 +1439,13 @@
       AOS.init();
     </script>
 
-    <!-- GSAP -->
+    <!-- GSAP = digunakan untuk text di hero saja-->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/SplitText.min.js"></script>
     <script>
-      // use a script tag or an external JS file
-      document.addEventListener("DOMContentLoaded", (event) => {
-        gsap.registerPlugin(ScrambleTextPlugin, SplitText, TextPlugin);
-        // gsap code here!
-      });
-    </script>
-    <script>
       // Memastikan DOM sudah dimuat sepenuhnya sebelum menjalankan animasi
       window.addEventListener("DOMContentLoaded", () => {
-        // 4. Inisialisasi Plugin SplitText
+        // Inisialisasi Plugin SplitText
         gsap.registerPlugin(SplitText);
 
         // Menampilkan elemen yang sebelumnya disembunyikan CSS
@@ -1350,13 +1453,15 @@
           visibility: "visible",
         });
 
-        // 5. Membuat GSAP Timeline (Agar animasi berjalan berurutan)
-        const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
+        // Membuat GSAP Timeline (Agar animasi berjalan berurutan)
+        const tl = gsap.timeline({
+          defaults: { ease: "power4.out", duration: 1.2 },
+        });
 
-        // 6. LOGIKA ANIMASI SPLITTEXT PADA HEADLINE
+        // LOGIKA ANIMASI SPLITTEXT PADA HEADLINE
         // Pecah teks headline berdasarkan "kata" (words) dan "baris" (lines)
         // Menggunakan "lines" membantu menjaga layout tetap rapi saat animasi
-        const mySplitText = new SplitText("#hero-headline", {
+        let mySplitText = SplitText.create("#hero-headline", {
           type: "words, lines",
         });
         const words = mySplitText.words; // Ambil array kata-kata
@@ -1366,16 +1471,12 @@
 
         // --- Mulai Menambahkan Animasi ke Timeline ---
 
-        tl
-          // A. Animasi Pre-headline (Muncul Halus dari Kiri)
-          .from(".hero-pre-headline", {
-            duration: 1,
-            x: -30,
-            opacity: 0,
-            delay: 0.2, // Beri sedikit jeda awal
-          })
-
-          // B. Animasi Headline (Efek SplitText - Muncul satu per satu)
+        tl.from(".hero-pre-headline", {
+          duration: 1,
+          x: -30,
+          opacity: 0,
+          delay: 0.2, // Beri sedikit jeda awal
+        })
           .to(
             words,
             {
@@ -1387,7 +1488,15 @@
             },
             "-=0.6"
           ) // Mulai animasi ini 0.6 detik sebelum animasi A selesai (overlap)
-
+          .to(
+            ".title-line",
+            {
+              width: "100%",
+              ease: "expo.inOut",
+              duration: 1.8,
+            },
+            "-=0.5"
+          )
           // C. Animasi Sub-headline (Muncul Halus dari Bawah)
           .from(
             ".hero-sub-headline",
