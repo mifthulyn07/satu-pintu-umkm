@@ -836,15 +836,13 @@
             <div
               class="flex justify-between items-center mt-6 text-dark dark:text-slate-100 text-[10px] uppercase tracking-[0.2em]"
             >
-              <!-- Sisi Kiri: Scroll to explore + Arrow -->
-              <div class="flex items-center sm:gap-4 md:gap-2">
-                <span class="text-wrap sm:w-auto md:w-full"
-                  >Scroll to explore</span
-                >
+              <!-- Sisi Kiri: Jangan pakai w-full agar tidak memakan ruang sisi kanan -->
+              <div class="flex items-center gap-2">
+                <span class="whitespace-nowrap">Scroll to explore</span>
 
-                <!-- Container Panah dengan Animasi Bawaan Tailwind -->
+                <!-- Container Panah -->
                 <span
-                  class="animate-fade-right animate-infinite animate-duration-[3000ms]"
+                  class="animate-fade-right animate-infinite animate-duration-[3000ms] shrink-0"
                 >
                   <svg
                     class="w-4 h-4"
@@ -862,8 +860,8 @@
                 </span>
               </div>
 
-              <!-- Sisi Kanan -->
-              <p class="text-wrap">
+              <!-- Sisi Kanan: Gunakan text-right agar teks mepet ke kanan -->
+              <p class="whitespace-nowrap text-right">
                 <span class="text-primary">PUK Team</span>
                 <span class="text-accent">2026</span>
               </p>
