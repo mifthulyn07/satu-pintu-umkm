@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Satu Pintu UMKM.</title>
+    <title>Satu Pintu UMKM</title>
     <link href="src/output.css" rel="stylesheet" />
     <link href="./dist/output.css" rel="stylesheet" />
     <link rel="icon" href="dist/img/logo-satu-pintu-umkm.png" />
@@ -80,7 +80,7 @@
     </style>
   </head>
   <body>
-    <!-- navigation -->
+    <!-- navigasi -->
     <header
       class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
     >
@@ -124,67 +124,49 @@
               id="nav-menu"
               class="hidden rounded-lg dark:bg-dark lg:dark:bg-transparent dark:shadow-black absolute py-5 lg:py-0 bg-white shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
             >
-              <ul class="block lg:flex">
-                <!-- home -->
+              <ul class="block lg:flex font-interface">
+                <!-- beranda -->
                 <li class="group">
                   <a
-                    href="#home"
+                    href="#beranda"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-slate-100"
-                    >Home</a
+                    >Beranda</a
                   >
                 </li>
 
-                <!-- about -->
+                <!-- profil -->
                 <li class="group">
                   <a
-                    href="#about"
+                    href="#profil"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-slate-100"
-                    >About</a
+                    >Profil</a
                   >
                 </li>
 
-                <!-- skill -->
+                <!-- layanan -->
                 <li class="group">
                   <a
-                    href="#skill"
+                    href="#layanan"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-slate-100"
-                    >Skill</a
+                    >Layanan</a
                   >
                 </li>
 
-                <!-- portofolio -->
+                <!-- prosedur -->
                 <li class="group">
                   <a
-                    href="#portofolio"
+                    href="#prosedur"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-slate-100"
-                    >Portofolio</a
+                    >Prosedur</a
                   >
                 </li>
 
-                <!-- blog -->
+                <!-- lokasi -->
                 <li class="group">
                   <a
-                    href="#blog"
+                    href="#lokasi"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-slate-100"
-                    >Blog</a
-                  >
-                </li>
-
-                <!-- clients -->
-                <!-- <li class="group">
-                  <a
-                    href="#clients"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-slate-100"
-                    >Clients</a
-                  >
-                </li> -->
-
-                <!-- contact -->
-                <li class="group">
-                  <a
-                    href="#contact"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-slate-100"
-                    >Contact</a
+                    >Lokasi</a
                   >
                 </li>
 
@@ -214,7 +196,7 @@
 
     <!-- Hero -->
     <section
-      id="home"
+      id="beranda"
       class="pt-36 pb-16 dark:bg-dark w-full relative min-h-[90vh] flex items-center justify-center bg-white overflow-hidden"
     >
       <!-- effect blur on hero -->
@@ -274,7 +256,7 @@
             <!-- hero button -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md">
               <a
-                href="#service"
+                href="#layanan"
                 class="hero-buttons opacity-0 w-full inline-flex items-center justify-center text-base font-bold text-white bg-primary py-3.5 px-8 rounded-full shadow-[0_10px_20px_-5px_rgba(26,86,219,0.4)] hover:shadow-primary/40 hover:-translate-y-1 transition duration-300 ease-in-out group"
               >
                 Layanan Digital
@@ -418,26 +400,34 @@
       </div>
     </section>
 
-    <!-- tentang kami -->
-    <section id="tentang-kami" class="pt-36 pb-10 dark:bg-dark font-interface">
+    <!-- profil -->
+    <section id="Profil" class="pt-36 pb-10 dark:bg-dark font-interface">
       <div class="container">
         <div class="flex flex-wrap">
           <!-- bidang PUK -->
           <div class="w-full px-4 mb-10 lg:w-1/2">
             <h4
+              data-aos="fade-in"
+              data-aos-duration="1000"
               class="font-bold font-display uppercase text-primary text-lg inline-block relative mb-5"
             >
-              Tentang Kami
+              Profil
               <span
                 class="absolute -bottom-1 left-0 w-8 h-1 bg-accent rounded-full"
               ></span>
             </h4>
             <h2
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="200"
               class="font-bold font-display text-dark dark:text-slate-100 text-3xl mb-5 max-w-xl lg:text-4xl"
             >
               Bidang Pemberdayaan Usaha Kecil
             </h2>
             <p
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="400"
               class="font-medium text-base mb-5 text-justify md:text-left font-interface md:text-lg lg:text-xl text-secondary dark:text-slate-400 max-w-full"
             >
               Berfokus pada
@@ -452,6 +442,9 @@
             <div class="flex items-center">
               <!-- gmail -->
               <a
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="200"
                 href="mailto:bidang.ukm.pemprovsu@gmail.com"
                 target="_blank"
                 class="group w-9 h-9 mr-3 text-secondary dark:text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
@@ -471,6 +464,9 @@
               </a>
               <!-- linkedln -->
               <a
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="400"
                 href="https://www.linkedin.com/company/dinas-koperasi-usaha-kecil-dan-menengah-provinsi-sumatera-utara"
                 target="_blank"
                 class="group w-9 h-9 mr-3 text-secondary dark:text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
@@ -490,6 +486,9 @@
               </a>
               <!-- instagram -->
               <a
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="600"
                 href="https://www.instagram.com/diskopukmsu/"
                 target="_blank"
                 class="group w-9 h-9 mr-3 text-secondary dark:text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
@@ -507,34 +506,33 @@
                   />
                 </svg>
               </a>
-              <!-- website -->
+              <!-- medium -->
               <a
-                href="https://diskopukm.sumutprov.go.id/"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+                href="https://medium.com/@bidang.ukm.pemprovsu"
                 target="_blank"
                 class="group w-9 h-9 mr-3 text-secondary dark:text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
               >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   width="20"
+                  role="img"
                   class="fill-current group-hover:text-slate-100"
-                  viewBox="0 0 48 48"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <title xmlns="">web</title>
-                  <g fill="none" stroke="currentColor" stroke-width="3">
-                    <path
-                      stroke-linejoin="round"
-                      d="M3 24a21 21 0 1 0 42 0a21 21 0 1 0-42 0"
-                    />
-                    <path
-                      stroke-linejoin="round"
-                      d="M15 24a9 21 0 1 1 18 0a9 21 0 1 1-18 0"
-                    />
-                    <path stroke-linecap="round" d="M4.5 31h39m-39-14h39" />
-                  </g>
+                  <title>Medium</title>
+                  <path
+                    d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"
+                  />
                 </svg>
               </a>
               <!-- tiktok -->
               <a
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
                 href="https://www.tiktok.com/@diskopukmsumut"
                 target="_blank"
                 class="group w-9 h-9 mr-3 text-secondary dark:text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
@@ -555,6 +553,9 @@
               </a>
               <!-- facebook -->
               <a
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="1200"
                 href="https://web.facebook.com/diskopukmprovsu"
                 target="_blank"
                 class="group w-9 h-9 mr-3 text-secondary hover:text-slite-100 hover:border-primary dark:text-slate-400 hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
@@ -579,6 +580,8 @@
           <!-- meet our team -->
           <div class="w-full px-4 lg:w-1/2">
             <h4
+              data-aos="fade-in"
+              data-aos-duration="1000"
               class="font-bold font-display uppercase text-primary text-lg inline-block relative mb-5"
             >
               Tim Kami
@@ -596,6 +599,9 @@
               >
                 <!-- hudaibah-mafuza -->
                 <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
                   class="mem-card group relative h-full sm:w-[60px] w-[80px] md:w-[100px] shrink-0 overflow-hidden rounded-[2rem] cursor-pointer hover:w-[350px] md:hover:w-[400px] transition-all duration-700 ease-in-out"
                 >
                   <img
@@ -615,6 +621,9 @@
 
                 <!-- unggul sitanggang -->
                 <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
                   class="mem-card group relative h-full sm:w-[60px] w-[80px] md:w-[100px] shrink-0 overflow-hidden rounded-[2rem] cursor-pointer hover:w-[350px] md:hover:w-[400px] transition-all duration-700 ease-in-out"
                 >
                   <img
@@ -636,6 +645,9 @@
 
                 <!-- mara ongku -->
                 <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="600"
                   class="mem-card group relative h-full sm:w-[60px] w-[80px] md:w-[100px] shrink-0 overflow-hidden rounded-[2rem] cursor-pointer hover:w-[350px] md:hover:w-[400px] transition-all duration-700 ease-in-out"
                 >
                   <img
@@ -655,6 +667,9 @@
 
                 <!-- aviscenna -->
                 <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="800"
                   class="mem-card group relative h-full sm:w-[60px] w-[80px] md:w-[100px] shrink-0 overflow-hidden rounded-[2rem] cursor-pointer hover:w-[350px] md:hover:w-[400px] transition-all duration-700 ease-in-out"
                 >
                   <img
@@ -674,6 +689,9 @@
 
                 <!-- paul agustinus -->
                 <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="1000"
                   class="mem-card group relative h-full sm:w-[60px] w-[80px] md:w-[100px] shrink-0 overflow-hidden rounded-[2rem] cursor-pointer hover:w-[350px] md:hover:w-[400px] transition-all duration-700 ease-in-out"
                 >
                   <img
@@ -695,6 +713,9 @@
 
                 <!-- elisabet hutasoit -->
                 <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="1200"
                   class="mem-card group relative h-full sm:w-[60px] w-[80px] md:w-[100px] shrink-0 overflow-hidden rounded-[2rem] cursor-pointer hover:w-[350px] md:hover:w-[400px] transition-all duration-700 ease-in-out"
                 >
                   <img
@@ -714,6 +735,9 @@
 
                 <!-- ratna amenawati -->
                 <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="1400"
                   class="mem-card group relative h-full sm:w-[60px] w-[80px] md:w-[100px] shrink-0 overflow-hidden rounded-[2rem] cursor-pointer hover:w-[350px] md:hover:w-[400px] transition-all duration-700 ease-in-out"
                 >
                   <img
@@ -735,6 +759,9 @@
 
                 <!-- tengku salmira aziza -->
                 <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="1600"
                   class="mem-card group relative h-full sm:w-[60px] w-[80px] md:w-[100px] shrink-0 overflow-hidden rounded-[2rem] cursor-pointer hover:w-[350px] md:hover:w-[400px] transition-all duration-700 ease-in-out"
                 >
                   <img
@@ -754,6 +781,9 @@
 
                 <!-- chairani -->
                 <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="1800"
                   class="mem-card group relative h-full sm:w-[60px] w-[80px] md:w-[100px] shrink-0 overflow-hidden rounded-[2rem] cursor-pointer hover:w-[350px] md:hover:w-[400px] transition-all duration-700 ease-in-out"
                 >
                   <img
@@ -957,7 +987,12 @@
               class="flex justify-between items-center mt-6 text-dark dark:text-slate-100 text-[10px] uppercase tracking-[0.2em]"
             >
               <!-- Sisi Kiri: Jangan pakai w-full agar tidak memakan ruang sisi kanan -->
-              <div class="flex items-center gap-2">
+              <div
+                class="flex items-center gap-2"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+              >
                 <span class="whitespace-nowrap">Geser untuk jelajahi</span>
 
                 <!-- Container Panah -->
@@ -981,7 +1016,12 @@
               </div>
 
               <!-- Sisi Kanan: Gunakan text-right agar teks mepet ke kanan -->
-              <p class="whitespace-nowrap text-right">
+              <p
+                class="whitespace-nowrap text-right"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
                 <span class="text-primary">Tim PUK</span>
                 <span class="text-accent">2026</span>
               </p>
@@ -991,29 +1031,34 @@
       </div>
     </section>
 
-    <!-- pusat layanan digital -->
-    <section
-      id="pusat-layanan-digital"
-      class="pt-36 pb-36 bg-slate-100 dark:bg-slate-800"
-    >
+    <!-- Layanan -->
+    <section id="layanan" class="pt-36 pb-36 bg-slate-100 dark:bg-slate-800">
       <div class="container">
         <!-- judul -->
         <div class="w-full px-4 mb-16">
           <div class="max-w-xl mx-auto text-center mb-5">
             <h4
+              data-aos="fade-in"
+              data-aos-duration="1000"
               class="font-bold font-display uppercase text-primary text-lg inline-block relative mb-5"
             >
-              Pusat Layanan Digital
+              Layanan
               <span
                 class="absolute -bottom-1 left-0 w-12 h-1 bg-accent rounded-full"
               ></span>
             </h4>
             <h2
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="200"
               class="font-bold text-dark font-display dark:text-slate-100 text-3xl lg:text-4xl mb-4"
             >
               Layanan Digital UMKM
             </h2>
             <p
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="400"
               class="font-medium text-base font-interface dark:text-slate-400 text-secondary md:text-lg lg:text-xl"
             >
               Transformasi pelayanan publik yang lebih cepat, mudah, dan
@@ -1027,6 +1072,9 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
           <!-- Buku Tamu -->
           <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
             class="group p-8 bg-white dark:bg-slate-700 rounded-2xl shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-2"
           >
             <div
@@ -1072,6 +1120,9 @@
 
           <!-- Event Expo/Bazar -->
           <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="400"
             class="group p-8 bg-white dark:bg-slate-700 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-2"
           >
             <div
@@ -1117,6 +1168,9 @@
 
           <!-- Pendaftaran Bantuan Usaha -->
           <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="600"
             class="group p-8 bg-white dark:bg-slate-700 rounded-2xl shadow-md border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-2"
           >
             <div
@@ -1162,6 +1216,9 @@
 
           <!-- Survei Kepuasan -->
           <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="800"
             class="group p-8 bg-white dark:bg-slate-700 rounded-2xl shadow-md border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-2"
           >
             <div
@@ -1207,29 +1264,34 @@
       </div>
     </section>
 
-    <!-- alur-pelayanan -->
-    <section
-      id="alur-pelayanan"
-      class="pt-32 pb-32 bg-slate-700 dark:bg-slate-300"
-    >
+    <!-- Prosedur -->
+    <section id="prosedur" class="pt-32 pb-32 bg-slate-700 dark:bg-slate-300">
       <div class="container">
         <!-- judul -->
         <div class="w-full px-4 mb-3">
           <div class="max-w-xl mx-auto text-center">
             <h4
+              data-aos="fade-in"
+              data-aos-duration="1000"
               class="font-bold font-display uppercase text-primary text-lg inline-block relative mb-5"
             >
-              Alur Pelayanan
+              Prosedur
               <span
                 class="absolute -bottom-1 left-0 w-10 h-1 bg-accent rounded-full"
               ></span>
             </h4>
             <h2
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="200"
               class="font-bold text-white font-display dark:text-dark text-3xl lg:text-4xl mb-4"
             >
-              Panduan Layanan Digital
+              Panduan Layanan
             </h2>
             <p
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="600"
               class="font-medium text-base font-interface dark:text-secondary text-slate-400 md:text-lg lg:text-xl"
             >
               Menghadirkan prosedur pelayanan yang transparan dan mudah diakses
@@ -1245,7 +1307,11 @@
           class="flex flex-nowrap relative gap-8 overflow-x-auto no-scrollbar items-center pt-16 pb-6 px-4 justify-start"
         >
           <!-- NIB -->
-          <div class="w-[320px] shrink-0 group">
+          <div
+            data-aos="slide-left"
+            data-aos-duration="1000"
+            class="w-[320px] shrink-0 group"
+          >
             <div
               class="relative h-[500px] rounded-[2.5rem] bg-slate-800 dark:bg-slate-600 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 group-hover:-translate-y-2"
             >
@@ -1309,7 +1375,12 @@
           </div>
 
           <!-- halal -->
-          <div class="w-[320px] shrink-0 group">
+          <div
+            data-aos="slide-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            class="w-[320px] shrink-0 group"
+          >
             <div
               class="relative h-[500px] rounded-[2.5rem] bg-slate-800 dark:bg-slate-600 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 group-hover:-translate-y-2"
             >
@@ -1375,6 +1446,9 @@
           <!-- sarana dan prasarana -->
           <div class="w-[320px] shrink-0 group">
             <div
+              data-aos="slide-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
               class="relative h-[500px] rounded-[2.5rem] bg-slate-800 dark:bg-slate-600 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 group-hover:-translate-y-2"
             >
               <div class="absolute inset-0">
@@ -1437,29 +1511,34 @@
       </div>
     </section>
 
-    <!-- Lokasi-pelayanan -->
-    <section
-      id="Lokasi Pelayanan"
-      class="pt-36 pb-32 bg-slate-100 dark:bg-slate-800"
-    >
+    <!-- Lokasi -->
+    <section id="lokasi" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-800">
       <div class="container">
         <div class="flex flex-wrap">
           <!-- penjelasan -->
           <div class="w-full px-4 mb-10 lg:w-1/2">
             <h4
+              data-aos="fade-in"
+              data-aos-duration="1000"
               class="font-bold font-display uppercase text-primary text-lg inline-block relative mb-5"
             >
-              Lokasi Pelayanan
+              Lokasi
               <span
                 class="absolute -bottom-1 left-0 w-8 h-1 bg-accent rounded-full"
               ></span>
             </h4>
             <h2
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="200"
               class="font-bold font-display text-dark dark:text-slate-100 text-3xl mb-5 max-w-xl lg:text-4xl"
             >
               Kunjungi Klinik UMKM Kami
             </h2>
             <p
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="400"
               class="font-medium text-base mb-5 text-justify md:text-left font-interface md:text-lg lg:text-xl text-secondary dark:text-slate-400 max-w-full"
             >
               Punya kendala teknis atau butuh informasi lebih lanjut mengenai
@@ -1470,6 +1549,9 @@
             <div class="space-y-6">
               <div class="flex items-start gap-4">
                 <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="800"
                   class="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0"
                 >
                   <svg
@@ -1494,11 +1576,17 @@
                 </div>
                 <div>
                   <h3
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="1000"
                     class="font-bold font-display text-dark dark:text-slate-100 mb-1"
                   >
                     Alamat Kantor
                   </h3>
                   <p
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="1000"
                     class="text-slate-500 font-interface dark:text-slate-400 text-sm"
                   >
                     Jalan Jend. Gatot Subroto KM 5.5 No. 218, Cinta Damai, Kec.
@@ -1507,8 +1595,16 @@
                 </div>
               </div>
 
-              <div class="flex items-start gap-4">
+              <div
+                data-aos="fade-in"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
+                class="flex items-start gap-4"
+              >
                 <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="800"
                   class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center shrink-0"
                 >
                   <svg
@@ -1527,11 +1623,17 @@
                 </div>
                 <div>
                   <h3
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="1000"
                     class="font-bold font-display text-dark dark:text-slate-100 mb-1"
                   >
                     Jam Pelayanan
                   </h3>
                   <p
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="1000"
                     class="text-slate-500 font-interface dark:text-slate-400 text-sm"
                   >
                     Senin - Jumat | 08.00 - 16.00 WIB
@@ -1541,17 +1643,23 @@
             </div>
 
             <a
-              href="https://maps.app.goo.gl/uX3LhR2J3H8vX8eR8"
+              href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.9830446390106!2d98.63163107403423!3d3.591363050277115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312e462fc1c2af%3A0x5b50e50e3194710!2sDINAS%20KOPERASI%20DAN%20UKM%20PROVSU!5e0!3m2!1sid!2sid!4v1776063276462!5m2!1sid!2sid"
               target="_blank"
               class="group/btn relative inline-flex items-center gap-4 mt-10"
             >
               <span
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="800"
                 class="text-xs font-display font-bold uppercase tracking-[0.2em] text-dark dark:text-slate-100 group-hover/btn:text-accent transition-colors duration-300"
               >
                 Petunjuk Arah
               </span>
 
               <div
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
                 class="relative w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center transition-all duration-500 group-hover/btn:w-40 group-hover/btn:bg-primary shadow-lg shadow-primary/20"
               >
                 <svg
@@ -1580,6 +1688,9 @@
           <!-- gmaps -->
           <div class="w-full lg:w-1/2 px-4">
             <div
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="1200"
               class="relative w-full md:h-[450px] h-[360px] rounded-[3rem] overflow-hidden shadow-xl border-8 border-white dark:border-slate-800"
             >
               <iframe
@@ -1628,31 +1739,31 @@
             </p>
           </div>
 
-          <!-- Article Categories -->
-          <div class="w-full px-4 mb-8 md:w-2/12">
-            <h3 class="font-semibold *-xl font-display text-white mb-8">
-              Article Technology
+          <!-- Artikel Terkait -->
+          <div class="w-full px-4 mb-8 md:w-4/12">
+            <h3 class="font-semibold *:text-xl font-display text-white mb-8">
+              Artikel Terkait
             </h3>
             <ul class="text-slate-300 font-interface">
               <li>
                 <a
-                  href="#"
+                  href="https://medium.com/@bidang.ukm.pemprovsu/panduan-penerbitan-nib-2026-alur-pelayanan-cepat-mudah-dari-dinas-koperasi-ukm-sumut-24956aa8ca69"
                   class="inline-block text-base hover:text-primary mb-2"
-                  >Legalitas</a
+                  >Cara Mandiri Urus NIB 2026</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://medium.com/@bidang.ukm.pemprovsu/panduan-lengkap-sertifikasi-halal-2026-strategi-umkm-sumut-naik-kelas-a7550e49420c?postPublishedType=repub"
                   class="inline-block text-base hover:text-primary mb-2"
-                  >Sertifikasi</a
+                  >Panduan Lengkap Sertifikasi Halal 2026</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://medium.com/@bidang.ukm.pemprovsu/alur-fasilitasi-bantuan-sarpras-umkm-prosedur-resmi-diskop-ukm-sumut-2026-9ec711600df0"
                   class="inline-block text-base hover:text-primary mb-2"
-                  >Fasilitasi</a
+                  >Alur Fasilitasi Bantuan Sarpras UMKM</a
                 >
               </li>
             </ul>
@@ -1666,37 +1777,37 @@
             <ul class="text-slate-300 font-interface">
               <li>
                 <a
-                  href="#home"
+                  href="#beranda"
                   class="inline-block text-base hover:text-primary mb-2"
-                  >Home</a
+                  >Beranda</a
                 >
               </li>
               <li>
                 <a
-                  href="#about"
+                  href="#profil"
                   class="inline-block text-base hover:text-primary mb-2"
-                  >About</a
+                  >Profil</a
                 >
               </li>
               <li>
                 <a
-                  href="#skill"
+                  href="#layanan"
                   class="inline-block text-base hover:text-primary mb-2"
-                  >Skill</a
+                  >Layanan</a
                 >
               </li>
               <li>
                 <a
-                  href="#portofolio"
+                  href="#prosedur"
                   class="inline-block text-base hover:text-primary mb-2"
-                  >Portofolio</a
+                  >Prosedur</a
                 >
               </li>
               <li>
                 <a
-                  href="#blog"
+                  href="#lokasi"
                   class="inline-block text-base hover:text-primary mb-2"
-                  >Blog</a
+                  >Lokasi</a
                 >
               </li>
             </ul>
@@ -1706,47 +1817,56 @@
         <!-- Footer Bottom -->
         <div class="w-full pt-10 border-t border-slate-700">
           <div class="flex items-center justify-center mb-5">
-            <!-- linkedln -->
+            <!-- gmail -->
             <a
-              href="www.linkedin.com/in/miftahul-ulyana-hutabarat"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              href="mailto:bidang.ukm.pemprovsu@gmail.com"
               target="_blank"
-              class="w-9 h-9 mr-3 hover:text-white text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
+              class="group w-9 h-9 mr-3 text-secondary dark:text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
             >
               <svg
                 width="20"
+                class="fill-current group-hover:text-slate-100"
                 role="img"
-                class="fill-current transition-colors duration-300 group-hover:text-accent"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <title>LinkedIn</title>
+                <title>Gmail</title>
                 <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
                 />
               </svg>
             </a>
-            <!-- github -->
+            <!-- instagram -->
             <a
-              href="https://github.com/mifthulyn07"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+              href="https://www.instagram.com/diskopukmsu/"
               target="_blank"
-              class="w-9 h-9 mr-3 hover:text-white text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
+              class="group w-9 h-9 mr-3 text-secondary dark:text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
             >
               <svg
                 width="20"
                 role="img"
-                class="fill-current transition-colors duration-300 group-hover:text-accent"
+                class="fill-current group-hover:text-slate-100"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <title>GitHub</title>
+                <title>Instagram</title>
                 <path
-                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
                 />
               </svg>
             </a>
             <!-- medium -->
             <a
-              href="https://medium.com/@mifthulyn07"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+              href="https://medium.com/@bidang.ukm.pemprovsu"
               target="_blank"
               class="w-9 h-9 mr-3 hover:text-white text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
             >
@@ -1763,27 +1883,36 @@
                 />
               </svg>
             </a>
-            <!-- instagram -->
+            <!-- tiktok -->
             <a
-              href="https://www.instagram.com/mifthulyn07"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="800"
+              href="https://www.tiktok.com/@diskopukmsumut"
               target="_blank"
-              class="w-9 h-9 mr-3 hover:text-white text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
+              class="group w-9 h-9 mr-3 text-secondary dark:text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
             >
               <svg
-                width="20"
-                role="img"
-                class="fill-current transition-colors duration-300 group-hover:text-accent"
-                viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                role="img"
+                class="fill-current group-hover:text-slate-100"
+                viewBox="0 0 24 24"
               >
-                <title>Instagram</title>
+                <title xmlns="">baseline-tiktok</title>
                 <path
-                  d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  fill="currentColor"
+                  d="M16.6 5.82s.51.5 0 0A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48"
                 />
               </svg>
             </a>
           </div>
-          <p class="font-medium text-xs text-slate-500 text-center">
+          <p
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+            class="font-medium text-xs text-slate-500 text-center"
+          >
             Made of <span class="text-pink-500">❤</span> by
             <a
               href="http://instagram.com/mifthulyn07"
